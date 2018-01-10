@@ -42,9 +42,18 @@ object MyModule {
     )
 
     println("length", List.length(xs))
+    List.foldLeft(
+      List(1,2,3), 0
+    )(
+      _ + _
+    )
+
+    println("flatMap example", List.flatMap(List(1,2,3))(i => List(i,i)))
+    //println("add int lists", List.addIntListsTogether(List(1,2,3), List(4,5,6)))
   }
 
   def factorial(n: Int): Int = {
+    @annotation.tailrec
     def loop(n: Int, acc: Int): Int =
       if (n <= 0) acc
       else loop(n - 1, n * acc)
