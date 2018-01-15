@@ -1,6 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:160:3: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
-[0m[[0m[31merror[0m] [0m[0m required: main.scala.List[Int][0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:190:40: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : h1.type (with underlying type A)[0m
+[0m[[0m[31merror[0m] [0m[0m required: A[0m
+[0m[[0m[31merror[0m] [0m[0m        loop(t1, t2, append(a3, Cons(f(h1,h2), Nil)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:190:43: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : h2.type (with underlying type A)[0m
+[0m[[0m[31merror[0m] [0m[0m required: A[0m
+[0m[[0m[31merror[0m] [0m[0m        loop(t1, t2, append(a3, Cons(f(h1,h2), Nil)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -49,7 +49,7 @@ object MyModule {
     )
 
     println("flatMap example", List.flatMap(List(1,2,3))(i => List(i,i)))
-    //println("add int lists", List.addIntListsTogether(List(1,2,3), List(4,5,6)))
+    println("add int lists", List.addIntListsTogether(List(1,2,3), List(4,5,6,7)))
   }
 
   def factorial(n: Int): Int = {
