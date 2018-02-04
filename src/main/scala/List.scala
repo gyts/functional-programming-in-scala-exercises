@@ -192,4 +192,12 @@ object List {
     }
     loop(a1, a2, Nil)
   }
+
+  def contains[A](as: List[A], a: A): Boolean =
+    foldRight(as, false)((h, b) => b || h == a)
+
+  // 3.24 Implement hasSubsequence for checking whether a List contains
+  // another List as a subsequence.
+  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean =
+    foldRight(sub, false)((a, b) => b || contains(sup, a))
 }

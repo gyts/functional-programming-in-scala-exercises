@@ -50,6 +50,12 @@ object MyModule {
 
     println("flatMap example", List.flatMap(List(1,2,3))(i => List(i,i)))
     println("add int lists", List.addIntListsTogether(List(1,2,3), List(4,5,6,7)))
+
+    println("List has subsequence", List.hasSubsequence(List(1,2,3,4), List(1,2,3)))
+
+    val testTree = Branch(Branch(Leaf(4), Leaf(2)), Leaf(5))
+    println("Tree size", Tree.size(testTree))
+    println("Tree size2", Tree.size2(testTree))
   }
 
   def factorial(n: Int): Int = {
