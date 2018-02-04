@@ -156,40 +156,28 @@ object List {
   // 3.22 Write a function that accepts two lists and constructs a new list
   // by adding corresponding elements. For example, List(1,2,3) and List(4,5,6) become List(5,7,9)
   def addIntListsTogether(a1: List[Int], a2: List[Int]): List[Int] = {
-    def loop(a1: List[Int], a2: List[Int], a3: List[Int]): List[Int] = {
-      if (a1 == Nil && a2 == Nil) a3;
-      else if (a1 == Nil) {
-        val Cons(h2, t2) = a2
-        loop(Nil, t2, append(a3, Cons(h2, Nil)))
-      } else if (a2 == Nil) {
-          val Cons(h1, t1) = a1
-          loop(t1, Nil, append(a3, Cons(h1, Nil)))
-      } else {
-        val Cons(h1, t1) = a1
-        val Cons(h2, t2) = a2
-        loop(t1, t2, append(a3, Cons(h1 + h2, Nil)))
+    def loop(a1: List[Int], a2: List[Int], a3: List[Int]): List[Int] =
+      (a1, a2) match {
+        case (Nil, Nil) => a3
+        case (Nil, Cons(h2, t2)) => loop(Nil, t2, append(a3, Cons(h2, Nil)))
+        case (Cons(h1, t1), Nil) => loop(t1, Nil, append(a3, Cons(h1, Nil)))
+        case (Cons(h1, t1), Cons(h2, t2)) => loop(t1, t2, append(a3, Cons(h1 + h2, Nil)))
       }
-    }
+
     loop(a1, a2, Nil)
   }
 
   // 3.23 Generalize the function you just wrote so that it’s not specific to integers or addition.
   // Name your generalized function zipWith
   def zipWith[A](a1: List[A], a2: List[A], f: (A, A) => A): List[A] = {
-    def loop(a1: List[A], a2: List[A], a3: List[A]): List[A] = {
-      if (a1 == Nil && a2 == Nil) a3;
-      else if (a1 == Nil) {
-        val Cons(h2, t2) = a2
-        loop(Nil, t2, append(a3, Cons(h2, Nil)))
-      } else if (a2 == Nil) {
-        val Cons(h1, t1) = a1
-        loop(t1, Nil, append(a3, Cons(h1, Nil)))
-      } else {
-        val Cons(h1, t1) = a1
-        val Cons(h2, t2) = a2
-        loop(t1, t2, append(a3, Cons(f(h1,h2), Nil)))
+    def loop(a1: List[A], a2: List[A], a3: List[A]): List[A] =
+      (a1, a2) match {
+        case (Nil, Nil) => a3
+        case (Nil, Cons(h2, t2)) => loop(Nil, t2, append(a3, Cons(h2, Nil)))
+        case (Cons(h1, t1), Nil) => loop(t1, Nil, append(a3, Cons(h1, Nil)))
+        case (Cons(h1, t1), Cons(h2, t2)) => loop(t1, t2, append(a3, Cons(f(h1,h2), Nil)))
       }
-    }
+
     loop(a1, a2, Nil)
   }
 
