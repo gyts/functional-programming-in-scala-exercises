@@ -49,28 +49,21 @@ object Tree {
 
   // 3.29 Generalize size, maximum, depth, and map, writing a new function fold that abstracts
   // over their similarities. Reimplement them in terms of this more general function
-  def fold[A, B](ts: Tree[A], z: B)(implicit f: (A, B) => B): B =
+  def fold[A,B](ts: Tree[A])(fl: A => B)(implicit fb: (B, B) => B): B =
     ts match {
-      case Leaf(a) => f(a, z)
-      case Branch(l, r) => fold(l, fold(r, z))
+      case Leaf(a) => fl(a)
+      case Branch(l, r) => fb(fold(l)(fl), fold(r)(fl))
     }
 
   def size2[A](ts: Tree[A]): Int =
-    fold(ts, 0)((_, b) => b + 1)
+    fold(ts)(_ => 1)((a, b) => a + b + 1)
 
   def maximum2(tn: Tree[Int]): Int =
-    fold(tn, 0)((a, b) => if (a > b) a else b)
+    fold(tn)(a => a)((a, b) => if (a > b) a else b)
 
-//  def depth2[A](ts: Tree[A]): Int =
-//    fold(ts, 0)((_, b) => b + 1)
+  def depth2[A](ts: Tree[A]): Int =
+    fold(ts)(_ => 0)((a, b) => (if (a > b) a else b) + 1)
 
-//  def map2[A, B](ts: Tree[A])(implicit f: A => B): Tree[B] =
-//    ts match {
-//      case Leaf(a) => Leaf(f(a))
-//      case Branch(l, r) => fold(ts, map2(l))
-//    }
-//    fold(ts, Nil: Tree[B])((a, _) => a match {
-//      case Leaf(x) => Leaf(f(x))
-//      case Branch(l, r) => Branch(map2(l), map2(r))
-//    })
+  def map2[A, B](ts: Tree[A])(implicit f: A => B): Tree[B] =
+    fold(ts)(a => Leaf(f(a)) : Tree[B])((a,b) => Branch(a, b))
 }

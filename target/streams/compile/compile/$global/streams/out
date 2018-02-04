@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\Main.scala:56:31: too many arguments (2) for method println: (x: Any)Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    println("Tree size", Tree.s)[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\Tree.scala:68:44: polymorphic expression cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : [(some other)B(in method map2)]main.scala.Tree[(some other)B(in method map2)][0m
+[0m[[0m[31merror[0m] [0m[0m required: main.scala.Leaf[B(in method map2)][0m
+[0m[[0m[31merror[0m] [0m[0m    fold(ts)(a => Leaf(f(a)))((a,b) => map2(Branch(a, b)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

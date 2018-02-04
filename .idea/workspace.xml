@@ -3,15 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="82ca367a-f6a5-460b-b824-b725bf15a28a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/List.scala" afterPath="$PROJECT_DIR$/src/main/scala/List.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main/scala/List$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main/scala/List$.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main/scala/List.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main/scala/List.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Tree.scala" afterPath="$PROJECT_DIR$/src/main/scala/Tree.scala" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/functionalprogramminginscalaexercises_2.12-0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/scala-2.12/functionalprogramminginscalaexercises_2.12-0.1-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" />
     </list>
     <ignored path="ScalaBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="Tree.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Tree.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="500">
+              <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -735,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Tree.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="500">
+          <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding />
         </state>
       </provider>
