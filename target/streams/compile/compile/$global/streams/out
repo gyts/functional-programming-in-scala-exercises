@@ -1,13 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:182:35: not found: value a3[0m
-[0m[[0m[31merror[0m] [0m[0m      if (a1 == Nil && a2 == Nil) a3;[0m
-[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:185:30: not found: value a3[0m
-[0m[[0m[31merror[0m] [0m[0m        loop(Nil, t2, append(a3, Cons(h2, Nil)))[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:188:30: not found: value a3[0m
-[0m[[0m[31merror[0m] [0m[0m        loop(t1, Nil, append(a3, Cons(h1, Nil)))[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\List.scala:192:29: not found: value a3[0m
-[0m[[0m[31merror[0m] [0m[0m        loop(t1, t2, append(a3, Cons(f(h1,h2), Nil)))[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\Option.scala:66:74: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m    List.foldRight(as, None : Option[List[A]])((a, acc) => a.flatMap(x =>))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Aim\IdeaProjects\FunctionalProgrammingInScalaExercises\src\main\scala\Option.scala:67:1: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

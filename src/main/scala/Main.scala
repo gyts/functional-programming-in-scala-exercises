@@ -56,6 +56,9 @@ object MyModule {
     val testTree = Branch(Branch(Leaf(4), Leaf(2)), Leaf(5))
     println("Tree size", Tree.size(testTree))
     println("Tree size2", Tree.size2(testTree))
+
+    println("Sequence list with some in it", Option.sequence(List(Some(5), Some(6), Some(7))))
+    println("Sequence list with none in it", Option.sequence(List(Some(5), None, Some(7))))
   }
 
   def factorial(n: Int): Int = {

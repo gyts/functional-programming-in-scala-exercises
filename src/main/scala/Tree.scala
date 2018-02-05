@@ -48,7 +48,7 @@ object Tree {
     }
 
   // 3.29 Generalize size, maximum, depth, and map, writing a new function fold that abstracts
-  // over their similarities. Reimplement them in terms of this more general functionN
+  // over their similarities. Reimplement them in terms of this more general function
   def fold[A,B](ts: Tree[A])(fl: A => B)(implicit fb: (B, B) => B): B =
     ts match {
       case Leaf(a) => fl(a)
